@@ -1,0 +1,363 @@
+
+/* ==================== GLOBAL ==================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+/* ==================== LANDING PAGE ==================== */
+
+.landingPageContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: url("/backGround2.png") center center / cover no-repeat;
+}
+
+.landingPageContainer nav {
+  padding: 24px 40px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navHeader h2 {
+  margin-left: 0;
+  font-size: 26px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(240, 100%, 50%);
+  padding: 8px 14px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.landingMianContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  min-height: calc(100vh - 90px);
+  align-items: center;
+  padding: 40px 5%;
+  color: aliceblue;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.content h1 {
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.content p {
+  margin-top: 15px;
+  font-size: clamp(16px, 2vw, 21px);
+  line-height: 1.6;
+}
+
+.startbtn {
+  margin-top: 1.5rem;
+}
+
+.home {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: blue;
+  color: azure;
+  padding: 9px 16px;
+}
+
+.mobileImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.mobileImg img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+.content h1 span {
+  color: orange;
+}
+
+.main {
+  background-color: rgb(226, 223, 236);
+  color: #fff;
+}
+
+
+/* ==================== NAVBAR ==================== */
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: #31847e;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.navBarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  min-width: 0;
+}
+
+.navBarActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.LogBtn {
+  background-color: blue;
+  color: #fff;
+}
+
+
+/* ==================== MEET CONTAINER ==================== */
+
+.meetContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  min-height: 600px;
+  padding: 40px 5%;
+  color: black;
+}
+
+.leftPanel {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.rightPanel {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightPanel > img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+@media (max-width: 900px) {
+  .landingPageContainer nav {
+    padding: 20px 25px;
+  }
+
+  .navHeader h2 {
+    font-size: 23px;
+  }
+
+  .navList {
+    gap: 12px;
+    font-size: 15px;
+  }
+
+  .landingMianContainer {
+    gap: 25px;
+    padding: 35px 4%;
+  }
+
+  .meetContainer {
+    gap: 25px;
+    padding: 35px 4%;
+  }
+
+  .leftPanel {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .landingPageContainer {
+    min-height: 100vh;
+    background-position: center;
+  }
+
+  .landingPageContainer nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 18px 15px;
+    gap: 15px;
+  }
+
+  .navHeader h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .navList {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .landingMianContainer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    min-height: auto;
+    padding: 45px 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: clamp(28px, 8vw, 38px);
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .startbtn {
+    margin-top: 20px;
+  }
+
+  .home {
+    font-size: 16px;
+    padding: 9px 14px;
+  }
+
+  .mobileImg {
+    width: 100%;
+  }
+
+  .mobileImg img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .navBar {
+    padding: 12px 15px;
+  }
+
+  .navBarContent {
+    flex-wrap: wrap;
+  }
+
+  .navBarActions {
+    gap: 6px;
+  }
+
+  .meetContainer {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    min-height: auto;
+    padding: 35px 20px;
+  }
+
+  .leftPanel {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .rightPanel {
+    width: 100%;
+  }
+
+  .rightPanel > img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 360px) {
+  .landingPageContainer nav {
+    padding: 15px 10px;
+  }
+
+  .navList {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .landingMianContainer {
+    padding: 30px 14px;
+  }
+
+  .content h1 {
+    font-size: 27px;
+  }
+
+  .meetContainer {
+    padding: 25px 14px;
+  }
+
+  .navBar {
+    padding: 10px;
+  }
+}
