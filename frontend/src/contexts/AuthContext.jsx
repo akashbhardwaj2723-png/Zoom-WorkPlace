@@ -6,7 +6,7 @@ import httpStatus from "http-status";
 
 export const AuthContext = createContext({});
   const client = axios.create({
-    baseURL:"http://localhost:8080/api/v1/users"
+    baseURL:"https://zoom-workplace.onrender.com/api/v1/users"
   })
 
 

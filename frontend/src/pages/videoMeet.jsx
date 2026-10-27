@@ -18,7 +18,7 @@ import style from "../VideoStyle/videoComponent.module.css";
 import { width } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 
-const server_url = "http://localhost:8080";
+const server_url = "https://zoom-workplace.onrender.com";
 
 const peerConFigConnection = {
   iceServers: [
