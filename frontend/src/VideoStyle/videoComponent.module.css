@@ -332,12 +332,16 @@
     aspect-ratio: 16 / 9;
   }
 
-  .meetUserVideo {
-    width: 160px;
-    height: 90px;
-    left: 10px;
-    bottom: 85px;
+   video.meetUserVideo {
+    position: fixed !important;
+    width: 180px !important;
+    height: 130px !important;
+    left: 10px !important;
+    bottom: 90px !important;
+    object-fit: cover !important;
+    z-index: 999 !important;
   }
+}
 
   .btnContainer {
     bottom: 10px;
